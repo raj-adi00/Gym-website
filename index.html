@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        /* CSS clear */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg.jpg');
+            background-repeat: no-repeat;
+            background-size: 1584px 831px;
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        #left {
+            display: inline-block;
+            width: 100px;
+            position: absolute;
+            top: 18px;
+            left: 53px;
+        }
+
+        #mid {
+            display: block;
+            width: 692px;
+            margin: auto;
+        }
+
+        .top {
+            /* border: 2px red solid; */
+            font-size: 15px;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 140px;
+            margin: 10px;
+        }
+
+        #navbar li a:hover {
+            border: none;
+            text-decoration: underline;
+            color: grey;
+            cursor: pointer;
+        }
+
+        #navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        #right {
+            position: absolute;
+            top: 18px;
+            right: 28px;
+            width: 150px;
+        }
+
+        #image {
+            width: 100px;
+            height: 85px;
+            /* filter: invert(100%); */
+        }
+
+        #head {
+            font-size: 17px;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            line-height: 15px;
+            width: 103px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            background-color: #111010;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 3px;
+            margin: 2px 6px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: rgb(224, 87, 87);
+            border: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .container {
+            border: 2px solid white;
+            padding: 21px;
+            margin: 123px 57%;
+            border-radius: 15px;
+            width: 35%;
+        }
+
+        .details {
+            font-size: 11px;
+            font-family: 'Baloo Bhai', cursive;
+            display: block;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 195px;
+            height: 9px;
+            margin: 10px auto;
+        }
+
+        .container h2 {
+            margin: auto;
+            width: 202px;
+        }
+
+        .sub {
+            margin: auto;
+            display: block;
+            width: 195px;
+            margin: 20px auto;
+            font-family: 'Baloo Bhai', cursive;
+            background-color: #596faa;
+        }
+
+        .sub:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top" id="left">
+            <img src="img/logo.jpg" alt="" id="image">
+            <p id="head">aditya's gym</p>
+        </div>
+        <div class="top" id="mid">
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="top" id="right">
+            <button class="btn">call us</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym</h2>
+        <form action="backend.php">
+            <input type="text" name="myname" placeholder="Enter your name" class="details">
+            <input type="text" name="mob" placeholder="Enter your number" class="details">
+            <input type="date" name="dob" placeholder="date of birth" class="details">
+            <input type="text" name="loc" placeholder="Enter your locality" class="details">
+            <input type="email" name="mail" placeholder="Enter your email" class="details">
+            <!-- <select name="gen" class="details">
+                <option value="sel" class="details">Select gender</option>
+                <option value="Mal" class="details">Male</option>
+                <option value="fem" class="details">Female</option>
+                <option value="third" class="details">Third gender</option>
+            </select> -->
+            <input type="submit" value="submit" class="sub">
+        </form>
+    </div>
+</body>
+
+</html>
